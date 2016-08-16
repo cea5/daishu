@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/shuo">
+	<TextView 
+        android:id="@+id/t2"
+        android:layout_width="match_parent"	  
+        android:layout_height="40sp"
+        android:text="我的大学"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@color/blue"
+        android:textColor="@color/whitesmoke"/>
+	<ImageView 
+	    android:id="@+id/shuo_submit_button"
+	    android:layout_width="40dp"	  
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/setting"/>
+ 	<RelativeLayout 
+   	    android:layout_width="match_parent"
+   		android:layout_height="match_parent"
+   		android:layout_below="@id/t2">
+	    <TextView
+		    android:id="@+id/t"
+		    android:layout_width="match_parent"
+	   		android:layout_height="53sp"
+	   		android:layout_alignParentBottom="true"/>  
+   	    <Utils.MyListView
+		    android:id="@+id/shuo_list"
+	   		android:layout_width="match_parent"
+	   		android:layout_height="wrap_content"
+	   		android:layout_above="@id/t"
+	   		android:layout_alignParentTop="true"/>
+   	</RelativeLayout>
+</RelativeLayout>
